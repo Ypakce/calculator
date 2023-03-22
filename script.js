@@ -19,17 +19,20 @@ function divide(num1, num2){
 }
 
 function operate(operator, num1, num2){
+    let res;
     if(operator == "+"){
-        add(num1, num2);
+        res = add(num1, num2);
     }
     if(operator == "-"){
-        subtract(num1, num2);
+        res = subtract(num1, num2);
     }
     if(operator == "*"){
-        multiply(num1,num2);
+        res = multiply(num1,num2);
     }
     if(operator == "/"){
-        divide(num1,num2);
+        res = divide(num1,num2);
     }
+    return res;
 }
 
+console.log(operate("*", 10, 25));
